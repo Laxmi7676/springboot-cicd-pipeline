@@ -49,3 +49,15 @@ docker run -p 8080:8080 laxmir22095/springboot-cicd-pipeline:latest
 
 ## Docker Hub
 Image available at: https://hub.docker.com/r/laxmir22095/springboot-cicd-pipeline
+
+## Pipeline Success
+![Pipeline Success](docs/project-images/pipeline-success.png)
+
+## Pipeline YAML Config
+![Pipeline YAML](docs/project-images/pipeline-yaml-config.png)
+
+## GitHub Secrets Configuration
+![GitHub Secrets](docs/project-images/github-secrets-config.png)
+
+## Docker Hub Image
+![Docker Hub](docs/project-images/dockerhub-image-pushed.png)
