@@ -67,11 +67,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: laxmir22095/springboot-cicd-pipeline:latest
+        run: |
+          docker build -t laxmir22095/springboot-cicd-pipeline:latest .
+          docker push laxmir22095/springboot-cicd-pipeline:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -83,4 +81,3 @@ jobs:
           echo "Image: laxmir22095/springboot-cicd-pipeline:latest"
           echo "Deployment successful!"
           echo "App is live at http://localhost:8080"
-
